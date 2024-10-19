@@ -23,7 +23,7 @@ pipeline {
             steps {
                 script {
                     dir("${PROJECT_PATH}") { 
-                         git branch: 'develop', credentialsId: 'GITHUB_Ekansh_cred', url: 'REPO_URL'
+                         git branch: 'develop', credentialsId: 'GITHUB_Ekansh_cred', url: 'https://github.com/DingDingHouse/Slot-Vikings.git'
                     }
                 }
             }
