@@ -23,8 +23,8 @@ pipeline {
             steps {
                 script {
                     bat '''
-                    IF EXIST C:\Slot-Vikings (rmdir /S /Q C:\Slot-Vikings)
-                    git clone -b develop https://github.com/DingDingHouse/Slot-Vikings.git C:\Slot-Vikings
+                    IF EXIST C:\\Slot-Vikings (rmdir /S /Q C:\\Slot-Vikings)
+                    git clone -b develop https://github.com/DingDingHouse/Slot-Vikings.git C:\\Slot-Vikings
                     '''
                 }
             }
