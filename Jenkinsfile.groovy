@@ -22,9 +22,10 @@ pipeline {
         stage('Checkout') {
             steps {
                 script {
-                    dir("${PROJECT_PATH}") { 
-                         git branch: 'develop', credentialsId: 'GITHUB_Ekansh_cred', url: 'https://github.com/DingDingHouse/Slot-Vikings.git'
-                    }
+                    bat '''
+                    IF EXIST C:\Slot-Vikings (rmdir /S /Q C:\Slot-Vikings)
+                    git clone -b develop https://github.com/DingDingHouse/Slot-Vikings.git C:\Slot-Vikings
+                    '''
                 }
             }
         }
