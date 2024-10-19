@@ -49,7 +49,8 @@ pipeline {
                             git init
                             git config user.email "ekansh.underpinservices@gmail.com"
                             git config user.name "Ekansh"
-                            git add Builds
+                            git config --global core.autocrlf true
+                            git add -f Builds
                             git commit -m "Add build"
                             git remote set-url origin https://github.com/DingDingHouse/Slot-Vikings.git
                             git push https://${Token}@github.com/DingDingHouse/Slot-Vikings.git develop --force
