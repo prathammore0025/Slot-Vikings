@@ -51,8 +51,8 @@ pipeline {
                             git config user.name "Ekansh"
                             git add Builds
                             git commit -m "Add build"
-                            git remote set-url origin https://github.com/Ekansh/Slot-Vikings.git
-                            git push https://${Token}@github.com/Ekansh/Slot-Vikings.git develop --force
+                            git remote set-url origin https://github.com/DingDingHouse/Slot-Vikings.git
+                            git push https://${Token}@github.com/DingDingHouse/Slot-Vikings.git develop --force
                         '''
                     }
                 }
